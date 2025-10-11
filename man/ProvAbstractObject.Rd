@@ -92,7 +92,7 @@ Initializes an object of class \link{ProvAbstractObject}
   namespace = NULL,
   attrs = list(),
   defaults = list(),
-  wrap = TRUE,
+  wrap = FALSE,
   logger = "INFO"
 )}\if{html}{\out{</div>}}
 }

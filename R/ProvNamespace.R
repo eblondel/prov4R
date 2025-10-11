@@ -17,7 +17,7 @@ ProvNamespace <- R6Class("ProvNamespace",
      id = NA,
      #'@field uri uri
      uri = NA,
-     
+
      #'@description Initializes an \link{ProvNamespace}
      #'@param id id
      #'@param uri uri
@@ -25,7 +25,7 @@ ProvNamespace <- R6Class("ProvNamespace",
        self$id = id
        self$uri = uri
      },
-     
+
      #'@description Get definition
      #'@return a named list defining the namespace
      getDefinition = function(){
@@ -107,7 +107,7 @@ getProvNamespace = function(id){
 registerProvNamespace <- function(id, uri, force = FALSE){
   ns <- getProvNamespace(toupper(id))
   if(!is.null(ns)){
-    if(!force) stop(sprintf("Atom Namespace with id '%s' already exists. Use force = TRUE to force registration", id))
+    if(!force) stop(sprintf("PROV Namespace with id '%s' already exists. Use force = TRUE to force registration", id))
     ns <- ProvNamespace$new(id, uri)
     ProvNamespace[[toupper(id)]] <- ns
     .prov4R$namespaces[sapply(.prov4R$namespaces, function(x){x$id == id})][[1]] <- ns

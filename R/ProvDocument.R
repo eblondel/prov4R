@@ -29,11 +29,19 @@ ProvDocument <- R6Class("ProvDocument",
   ),
   public = list(
 
+    #'@field entity  entity
+    entity = list(),
 
     #'@description Initializes a \link{ProvDocument}
     #'@param xml object of class \link[XML]{XMLInternalNode-class} from \pkg{XML}
     initialize = function(xml = NULL){
       super$initialize(xml = xml)
+    },
+
+    #'@description Adds entity
+    #'@param entity entity
+    addEntity = function(entity){
+      self$addListElement("entity", entity)
     }
   )
 )

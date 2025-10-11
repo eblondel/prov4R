@@ -42,6 +42,16 @@ ProvEntity <- R6Class("ProvEntity",
       super$initialize(xml = xml)
     },
 
+    #'@description Set ID
+    #'@param id id
+    #'@param ns namespace prefix
+    setId = function(id, ns){
+      if(!ns %in% sapply(getProvNamespaces(), function(x){x$id})){
+        stop(sprintf("Namespace '%s' doesn't seem to be registered!", ns))
+      }
+      self$attrs["prov:id"] = paste0(ns,":",id)
+    },
+
     #'@description Adds label
     #'@param label label
     #'@return \code{TRUE} if added, \code{FALSE} otherwise

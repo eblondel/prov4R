@@ -45,6 +45,7 @@ Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 \subsection{Public methods}{
 \itemize{
 \item \href{#method-ProvEntity-new}{\code{ProvEntity$new()}}
+\item \href{#method-ProvEntity-setId}{\code{ProvEntity$setId()}}
 \item \href{#method-ProvEntity-addLabel}{\code{ProvEntity$addLabel()}}
 \item \href{#method-ProvEntity-addLocation}{\code{ProvEntity$addLocation()}}
 \item \href{#method-ProvEntity-addType}{\code{ProvEntity$addType()}}
@@ -92,6 +93,25 @@ Initializes a \link{ProvEntity}
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{xml}}{object of class \link[XML]{XMLInternalNode-class} from \pkg{XML}}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-ProvEntity-setId"></a>}}
+\if{latex}{\out{\hypertarget{method-ProvEntity-setId}{}}}
+\subsection{Method \code{setId()}}{
+Set ID
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{ProvEntity$setId(id, ns)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{id}}{id}
+
+\item{\code{ns}}{namespace prefix}
 }
 \if{html}{\out{</div>}}
 }

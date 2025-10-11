@@ -12,8 +12,20 @@ context("ProvDocument")
 test_that("encoding",{
   testthat::skip_on_cran()
 
+  #custom report namespace
+  registerProvNamespace("mys", "https://mysystem")
+
   #encoding
   prov <- ProvDocument$new()
+
+  #-> add entity
+  ent1 = ProvEntity$new()
+  ent1$setId("report", "mys")
+  ent1$addLabel("Computation report")
+  prov$addEntity(ent1)
+
+  #--> add activity
+
   xml = prov$encode()
 
   #decoding

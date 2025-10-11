@@ -30,10 +30,18 @@ Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 \section{Super classes}{
 \code{\link[prov4R:prov4RLogger]{prov4R::prov4RLogger}} -> \code{\link[prov4R:ProvAbstractObject]{prov4R::ProvAbstractObject}} -> \code{ProvDocument}
 }
+\section{Public fields}{
+\if{html}{\out{<div class="r6-fields">}}
+\describe{
+\item{\code{entity}}{entity}
+}
+\if{html}{\out{</div>}}
+}
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
 \item \href{#method-ProvDocument-new}{\code{ProvDocument$new()}}
+\item \href{#method-ProvDocument-addEntity}{\code{ProvDocument$addEntity()}}
 \item \href{#method-ProvDocument-clone}{\code{ProvDocument$clone()}}
 }
 }
@@ -78,6 +86,23 @@ Initializes a \link{ProvDocument}
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{xml}}{object of class \link[XML]{XMLInternalNode-class} from \pkg{XML}}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-ProvDocument-addEntity"></a>}}
+\if{latex}{\out{\hypertarget{method-ProvDocument-addEntity}{}}}
+\subsection{Method \code{addEntity()}}{
+Adds entity
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{ProvDocument$addEntity(entity)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{entity}}{entity}
 }
 \if{html}{\out{</div>}}
 }

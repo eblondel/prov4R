@@ -154,7 +154,7 @@ ProvAbstractObject <- R6Class("ProvAbstractObject",
   ),
   public = list(
     #'@field wrap wrapping XML element
-    wrap = TRUE,
+    wrap = FALSE,
     #'@field element element
     element = NA,
     #'@field namespace namespace
@@ -178,7 +178,7 @@ ProvAbstractObject <- R6Class("ProvAbstractObject",
     #'@param logger logger type
     initialize = function(xml = NULL, element = NULL, namespace = NULL,
                           attrs = list(), defaults = list(),
-                          wrap = TRUE, logger = "INFO"){
+                          wrap = FALSE, logger = "INFO"){
       super$initialize(logger = logger)
       if(!is.null(element)){ private$xmlElement <- element }
       if(!is.null(namespace)){ private$xmlNamespacePrefix <- toupper(namespace)}
