@@ -20,6 +20,6 @@ test_that("encoding",{
   prov2 <- ProvDocument$new(xml = xml)
   xml2 <- prov2$encode()
 
-  expect_true(ProvAbstractObject$compare(atom, atom2))
+  expect_true(ProvAbstractObject$compare(prov, prov2))
 
 })
