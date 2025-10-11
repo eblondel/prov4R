@@ -2,6 +2,7 @@
 
 export(ProvAbstractObject)
 export(ProvDocument)
+export(ProvEntity)
 export(ProvNamespace)
 export(getClassesInheriting)
 export(getProvClasses)

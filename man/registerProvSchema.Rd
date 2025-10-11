@@ -14,8 +14,8 @@ registerProvSchema(xsdFile)
 in \pkg{prov4R}
 }
 \examples{
-  atom_xsd_file <- system.file("extdata/schemas/atom/atom.xsd", package = "prov4R")
-  registerProvSchema(xsdFile = atom_xsd_file)
+  prov_xsd_file <- system.file("extdata/schemas/prov.xsd", package = "prov4R")
+  registerProvSchema(xsdFile = prov_xsd_file)
 
 }
 \author{

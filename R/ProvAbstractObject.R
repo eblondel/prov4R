@@ -527,7 +527,6 @@ ProvAbstractObject <- R6Class("ProvAbstractObject",
               }else{
                 itemAttrs <- attributes(item)
                 itemAttrs <- itemAttrs[names(itemAttrs)!="class"]
-                itemAttrs <- c(itemAttrs, href = item)
                 if(length(item)==0) item <- NA
                 if(is.logical(item)) item <- tolower(as.character(as.logical(item)))
                 item <- private$fromComplexTypes(item)
@@ -543,7 +542,6 @@ ProvAbstractObject <- R6Class("ProvAbstractObject",
           }else{
             fieldObjAttrs <- attributes(fieldObj)
             fieldObjAttrs <- fieldObjAttrs[names(fieldObjAttrs)!="class"]
-            fieldObjattrs <- c(fieldObjAttrs, href = fieldObj)
             if(length(fieldObj)==0) fieldObj <- NA
             if(is.logical(fieldObj)) fieldObj <- tolower(as.character(as.logical(fieldObj)))
             fieldObj <- private$fromComplexTypes(fieldObj)
