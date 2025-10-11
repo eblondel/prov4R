@@ -29,8 +29,10 @@ ProvDocument <- R6Class("ProvDocument",
   ),
   public = list(
 
-    #'@field entity  entity
+    #'@field entity entity
     entity = list(),
+    #'@field activity activity
+    activity = list(),
 
     #'@description Initializes a \link{ProvDocument}
     #'@param xml object of class \link[XML]{XMLInternalNode-class} from \pkg{XML}
@@ -42,6 +44,12 @@ ProvDocument <- R6Class("ProvDocument",
     #'@param entity entity
     addEntity = function(entity){
       self$addListElement("entity", entity)
+    },
+
+    #'@description Adds activity
+    #'@param activity activity
+    addActivity = function(activity){
+      self$addListElement("activity", activity)
     }
   )
 )

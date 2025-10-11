@@ -21,10 +21,16 @@ test_that("encoding",{
   #-> add entity
   ent1 = ProvEntity$new()
   ent1$setId("report", "mys")
-  ent1$addLabel("Computation report")
+  ent1$addLabel("Statistical report")
   prov$addEntity(ent1)
 
   #--> add activity
+  act1 = ProvActivity$new()
+  act1$setId("generateReport", "mys")
+  act1$addLabel("Generate report")
+  act1$setStartTime(Sys.time())
+  act1$setEndTime(Sys.time()+10000)
+  prov$addActivity(act1)
 
   xml = prov$encode()
 

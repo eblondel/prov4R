@@ -76,6 +76,7 @@ Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="print"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-print'><code>prov4R::ProvAbstractObject$print()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="save"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-save'><code>prov4R::ProvAbstractObject$save()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="setIsDocument"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-setIsDocument'><code>prov4R::ProvAbstractObject$setIsDocument()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="setProvAttr"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-setProvAttr'><code>prov4R::ProvAbstractObject$setProvAttr()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="validate"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-validate'><code>prov4R::ProvAbstractObject$validate()</code></a></span></li>
 </ul>
 </details>

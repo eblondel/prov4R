@@ -67,6 +67,7 @@ Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 \item \href{#method-ProvAbstractObject-getClass}{\code{ProvAbstractObject$getClass()}}
 \item \href{#method-ProvAbstractObject-getNamespaceDefinition}{\code{ProvAbstractObject$getNamespaceDefinition()}}
 \item \href{#method-ProvAbstractObject-getXmlElement}{\code{ProvAbstractObject$getXmlElement()}}
+\item \href{#method-ProvAbstractObject-setProvAttr}{\code{ProvAbstractObject$setProvAttr()}}
 \item \href{#method-ProvAbstractObject-clone}{\code{ProvAbstractObject$clone()}}
 }
 }
@@ -443,6 +444,27 @@ Get XML element name
 
 \subsection{Returns}{
 object of class \code{character}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-ProvAbstractObject-setProvAttr"></a>}}
+\if{latex}{\out{\hypertarget{method-ProvAbstractObject-setProvAttr}{}}}
+\subsection{Method \code{setProvAttr()}}{
+Set a PROV XML attribute
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{ProvAbstractObject$setProvAttr(name, attr, ns = NULL)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{name}}{name of the attribute (without the PROV prefix)}
+
+\item{\code{attr}}{attr to be added}
+
+\item{\code{ns}}{namespace prefix}
+}
+\if{html}{\out{</div>}}
 }
 }
 \if{html}{\out{<hr>}}

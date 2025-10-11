@@ -790,6 +790,17 @@ ProvAbstractObject <- R6Class("ProvAbstractObject",
     #'@return object of class \code{character}
     getXmlElement = function(){
       return(private$xmlElement)
+    },
+
+    #'@description Set a PROV XML attribute
+    #'@param name name of the attribute (without the PROV prefix)
+    #'@param attr attr to be added
+    #'@param ns namespace prefix
+    setProvAttr = function(name, attr, ns = NULL){
+      if(!is.null(ns)) if(!ns %in% sapply(getProvNamespaces(), function(x){x$id})){
+        stop(sprintf("Namespace '%s' doesn't seem to be registered!", ns))
+      }
+      self$attrs[paste0("prov:", name)] = if(!is.null(ns)) paste0(ns,":",attr) else attr
     }
 
   )
