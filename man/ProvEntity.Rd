@@ -45,7 +45,6 @@ Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 \subsection{Public methods}{
 \itemize{
 \item \href{#method-ProvEntity-new}{\code{ProvEntity$new()}}
-\item \href{#method-ProvEntity-setId}{\code{ProvEntity$setId()}}
 \item \href{#method-ProvEntity-addLabel}{\code{ProvEntity$addLabel()}}
 \item \href{#method-ProvEntity-addLocation}{\code{ProvEntity$addLocation()}}
 \item \href{#method-ProvEntity-addType}{\code{ProvEntity$addType()}}
@@ -75,6 +74,7 @@ Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="isFieldInheritedFrom"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-isFieldInheritedFrom'><code>prov4R::ProvAbstractObject$isFieldInheritedFrom()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="print"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-print'><code>prov4R::ProvAbstractObject$print()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="save"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-save'><code>prov4R::ProvAbstractObject$save()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="setId"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-setId'><code>prov4R::ProvAbstractObject$setId()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="setIsDocument"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-setIsDocument'><code>prov4R::ProvAbstractObject$setIsDocument()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="setProvAttr"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-setProvAttr'><code>prov4R::ProvAbstractObject$setProvAttr()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="validate"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-validate'><code>prov4R::ProvAbstractObject$validate()</code></a></span></li>
@@ -94,25 +94,6 @@ Initializes a \link{ProvEntity}
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{xml}}{object of class \link[XML]{XMLInternalNode-class} from \pkg{XML}}
-}
-\if{html}{\out{</div>}}
-}
-}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-ProvEntity-setId"></a>}}
-\if{latex}{\out{\hypertarget{method-ProvEntity-setId}{}}}
-\subsection{Method \code{setId()}}{
-Set ID
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{ProvEntity$setId(id, ns)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{id}}{id}
-
-\item{\code{ns}}{namespace prefix}
 }
 \if{html}{\out{</div>}}
 }

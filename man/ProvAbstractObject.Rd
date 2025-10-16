@@ -68,6 +68,7 @@ Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 \item \href{#method-ProvAbstractObject-getNamespaceDefinition}{\code{ProvAbstractObject$getNamespaceDefinition()}}
 \item \href{#method-ProvAbstractObject-getXmlElement}{\code{ProvAbstractObject$getXmlElement()}}
 \item \href{#method-ProvAbstractObject-setProvAttr}{\code{ProvAbstractObject$setProvAttr()}}
+\item \href{#method-ProvAbstractObject-setId}{\code{ProvAbstractObject$setId()}}
 \item \href{#method-ProvAbstractObject-clone}{\code{ProvAbstractObject$clone()}}
 }
 }
@@ -461,6 +462,25 @@ Set a PROV XML attribute
 \item{\code{name}}{name of the attribute (without the PROV prefix)}
 
 \item{\code{attr}}{attr to be added}
+
+\item{\code{ns}}{namespace prefix}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-ProvAbstractObject-setId"></a>}}
+\if{latex}{\out{\hypertarget{method-ProvAbstractObject-setId}{}}}
+\subsection{Method \code{setId()}}{
+Set ID
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{ProvAbstractObject$setId(id, ns = NULL)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{id}}{id}
 
 \item{\code{ns}}{namespace prefix}
 }

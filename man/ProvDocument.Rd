@@ -33,9 +33,17 @@ Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 \section{Public fields}{
 \if{html}{\out{<div class="r6-fields">}}
 \describe{
+\item{\code{agent}}{agent}
+
 \item{\code{entity}}{entity}
 
 \item{\code{activity}}{activity}
+
+\item{\code{person}}{person}
+
+\item{\code{organization}}{organization}
+
+\item{\code{softwareAgent}}{softwareAgent}
 }
 \if{html}{\out{</div>}}
 }
@@ -45,6 +53,10 @@ Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 \item \href{#method-ProvDocument-new}{\code{ProvDocument$new()}}
 \item \href{#method-ProvDocument-addEntity}{\code{ProvDocument$addEntity()}}
 \item \href{#method-ProvDocument-addActivity}{\code{ProvDocument$addActivity()}}
+\item \href{#method-ProvDocument-addAgent}{\code{ProvDocument$addAgent()}}
+\item \href{#method-ProvDocument-addPerson}{\code{ProvDocument$addPerson()}}
+\item \href{#method-ProvDocument-addOrganization}{\code{ProvDocument$addOrganization()}}
+\item \href{#method-ProvDocument-addSoftwareAgent}{\code{ProvDocument$addSoftwareAgent()}}
 \item \href{#method-ProvDocument-clone}{\code{ProvDocument$clone()}}
 }
 }
@@ -71,6 +83,7 @@ Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="isFieldInheritedFrom"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-isFieldInheritedFrom'><code>prov4R::ProvAbstractObject$isFieldInheritedFrom()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="print"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-print'><code>prov4R::ProvAbstractObject$print()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="save"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-save'><code>prov4R::ProvAbstractObject$save()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="setId"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-setId'><code>prov4R::ProvAbstractObject$setId()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="setIsDocument"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-setIsDocument'><code>prov4R::ProvAbstractObject$setIsDocument()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="setProvAttr"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-setProvAttr'><code>prov4R::ProvAbstractObject$setProvAttr()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="validate"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-validate'><code>prov4R::ProvAbstractObject$validate()</code></a></span></li>
@@ -124,6 +137,74 @@ Adds activity
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{activity}}{activity}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-ProvDocument-addAgent"></a>}}
+\if{latex}{\out{\hypertarget{method-ProvDocument-addAgent}{}}}
+\subsection{Method \code{addAgent()}}{
+Adds agent
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{ProvDocument$addAgent(agent)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{agent}}{agent}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-ProvDocument-addPerson"></a>}}
+\if{latex}{\out{\hypertarget{method-ProvDocument-addPerson}{}}}
+\subsection{Method \code{addPerson()}}{
+Adds person
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{ProvDocument$addPerson(person)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{person}}{person}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-ProvDocument-addOrganization"></a>}}
+\if{latex}{\out{\hypertarget{method-ProvDocument-addOrganization}{}}}
+\subsection{Method \code{addOrganization()}}{
+Adds organization
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{ProvDocument$addOrganization(organization)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{organization}}{organization}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-ProvDocument-addSoftwareAgent"></a>}}
+\if{latex}{\out{\hypertarget{method-ProvDocument-addSoftwareAgent}{}}}
+\subsection{Method \code{addSoftwareAgent()}}{
+Adds software agent
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{ProvDocument$addSoftwareAgent(softwareAgent)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{softwareAgent}}{softwareAgent}
 }
 \if{html}{\out{</div>}}
 }

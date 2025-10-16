@@ -801,6 +801,13 @@ ProvAbstractObject <- R6Class("ProvAbstractObject",
         stop(sprintf("Namespace '%s' doesn't seem to be registered!", ns))
       }
       self$attrs[paste0("prov:", name)] = if(!is.null(ns)) paste0(ns,":",attr) else attr
+    },
+
+    #'@description Set ID
+    #'@param id id
+    #'@param ns namespace prefix
+    setId = function(id, ns = NULL){
+      self$setProvAttr("id", id, ns = ns)
     }
 
   )

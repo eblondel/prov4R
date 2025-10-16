@@ -34,6 +34,15 @@ ProvDocument <- R6Class("ProvDocument",
     #'@field activity activity
     activity = list(),
 
+    #'@field agent agent
+    agent = list(),
+    #'@field person person
+    person = list(),
+    #'@field organization organization
+    organization = list(),
+    #'@field softwareAgent softwareAgent
+    softwareAgent = list(),
+
     #'@description Initializes a \link{ProvDocument}
     #'@param xml object of class \link[XML]{XMLInternalNode-class} from \pkg{XML}
     initialize = function(xml = NULL){
@@ -50,6 +59,30 @@ ProvDocument <- R6Class("ProvDocument",
     #'@param activity activity
     addActivity = function(activity){
       self$addListElement("activity", activity)
+    },
+
+    #'@description Adds agent
+    #'@param agent agent
+    addAgent = function(agent){
+      self$addListElement("agent", agent)
+    },
+
+    #'@description Adds person
+    #'@param person person
+    addPerson = function(person){
+      self$addListElement("person", person)
+    },
+
+    #'@description Adds organization
+    #'@param organization organization
+    addOrganization = function(organization){
+      self$addListElement("organization", organization)
+    },
+
+    #'@description Adds software agent
+    #'@param softwareAgent softwareAgent
+    addSoftwareAgent = function(softwareAgent){
+      self$addListElement("softwareAgent", softwareAgent)
     }
   )
 )

@@ -38,6 +38,7 @@ ProvNamespace <- R6Class("ProvNamespace",
 ProvNamespace$PROV = ProvNamespace$new("prov", "http://www.w3.org/ns/prov#")
 ProvNamespace$XLINK = ProvNamespace$new("xlink", "http://www.w3.org/1999/xlink")
 ProvNamespace$XSI = ProvNamespace$new("xsi", "http://www.w3.org/2001/XMLSchema-instance")
+ProvNamespace$RDF = ProvNamespace$new("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 
 #' setMetadataNamespaces
 #' @export

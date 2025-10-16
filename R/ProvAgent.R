@@ -1,29 +1,29 @@
-#' ProvEntity
+#' ProvAgent
 #'
 #' @docType class
 #' @importFrom R6 R6Class
 #' @export
 #'
-#' @name ProvEntity
-#' @title PROV entity class
-#' @description This class models an PROV entity
-#' @keywords prov entity
-#' @return Object of \code{ \link[R6]{R6Class}} for modelling an PROV entity
+#' @name ProvAgent
+#' @title PROV agent class
+#' @description This class models an PROV agent
+#' @keywords prov agent
+#' @return Object of \code{ \link[R6]{R6Class}} for modelling an PROV agent
 #' @format \code{ \link[R6]{R6Class}} object.
 #'
 #' @examples
 #'   #encoding
-#'   entity <- ProvEntity$new()
-#'   entity$encode()
+#'   agent <- ProvAgent$new()
+#'   agent$encode()
 #'
 #' @author Emmanuel Blondel <emmanuel.blondel1@@gmail.com>
 #'
-ProvEntity <- R6Class("ProvEntity",
+ProvAgent <- R6Class("ProvAgent",
   inherit = ProvAbstractObject,
   lock_class = FALSE,
   lock_objects = FALSE,
   private = list(
-    xmlElement = "entity",
+    xmlElement = "agent",
     xmlNamespacePrefix = "PROV",
     document = FALSE
   ),
@@ -36,7 +36,7 @@ ProvEntity <- R6Class("ProvEntity",
     #'@field type type
     type = list(),
 
-    #'@description Initializes a \link{ProvEntity}
+    #'@description Initializes a \link{ProvAgent}
     #'@param xml object of class \link[XML]{XMLInternalNode-class} from \pkg{XML}
     initialize = function(xml = NULL){
       super$initialize(xml = xml)

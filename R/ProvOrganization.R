@@ -1,35 +1,35 @@
-#' ProvCollection
+#' ProvOrganization
 #'
 #' @docType class
 #' @importFrom R6 R6Class
 #' @export
 #'
-#' @name ProvCollection
-#' @title PROV collection class
-#' @description This class models an PROV collection
-#' @keywords prov entity collection
-#' @return Object of \code{ \link[R6]{R6Class}} for modelling an PROV collection
+#' @name ProvOrganization
+#' @title PROV organization class
+#' @description This class models an PROV organization
+#' @keywords prov entity organization
+#' @return Object of \code{ \link[R6]{R6Class}} for modelling an PROV organization
 #' @format \code{ \link[R6]{R6Class}} object.
 #'
 #' @examples
 #'   #encoding
-#'   collection <- ProvCollection$new()
-#'   collection$encode()
+#'   organization <- ProvOrganization$new()
+#'   organization$encode()
 #'
 #' @author Emmanuel Blondel <emmanuel.blondel1@@gmail.com>
 #'
-ProvCollection <- R6Class("ProvCollection",
-  inherit = ProvEntity,
+ProvOrganization <- R6Class("ProvOrganization",
+  inherit = ProvAgent,
   lock_class = FALSE,
   lock_objects = FALSE,
   private = list(
-    xmlElement = "collection",
+    xmlElement = "organization",
     xmlNamespacePrefix = "PROV",
     document = FALSE
   ),
   public = list(
 
-    #'@description Initializes a \link{ProvCollection}
+    #'@description Initializes a \link{ProvOrganization}
     #'@param xml object of class \link[XML]{XMLInternalNode-class} from \pkg{XML}
     initialize = function(xml = NULL){
       super$initialize(xml = xml)

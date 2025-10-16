@@ -32,6 +32,16 @@ test_that("encoding",{
   act1$setEndTime(Sys.time()+10000)
   prov$addActivity(act1)
 
+  #--> add agents
+  ag = ProvAgent$new();ag$setId("the.agent")
+  prov$addAgent(ag)
+  p = ProvPerson$new();p$setId("the.person")
+  prov$addPerson(p)
+  org = ProvOrganization$new();org$setId("the.org")
+  prov$addOrganization(org)
+  soft = ProvSoftwareAgent$new();soft$setId("the.software")
+  prov$addSoftwareAgent(soft)
+
   xml = prov$encode()
 
   #decoding

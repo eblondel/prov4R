@@ -46,13 +46,6 @@ ProvActivity <- R6Class("ProvActivity",
       super$initialize(xml = xml)
     },
 
-    #'@description Set ID
-    #'@param id id
-    #'@param ns namespace prefix
-    setId = function(id, ns){
-      self$setProvAttr("id", id, ns)
-    },
-
     #'@description Set start time
     #'@param startTime start time
     setStartTime = function(startTime){
