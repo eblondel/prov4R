@@ -2,9 +2,12 @@
 
 export(ProvAbstractObject)
 export(ProvActivity)
+export(ProvBundle)
+export(ProvCollection)
 export(ProvDocument)
 export(ProvEntity)
 export(ProvNamespace)
+export(ProvPlan)
 export(getClassesInheriting)
 export(getProvClasses)
 export(getProvNamespace)

@@ -7,7 +7,7 @@
 #' @name ProvEntity
 #' @title PROV entity class
 #' @description This class models an PROV entity
-#' @keywords atom feed
+#' @keywords prov entity
 #' @return Object of \code{ \link[R6]{R6Class}} for modelling an PROV entity
 #' @format \code{ \link[R6]{R6Class}} object.
 #'
