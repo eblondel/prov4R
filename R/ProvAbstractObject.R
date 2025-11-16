@@ -808,7 +808,27 @@ ProvAbstractObject <- R6Class("ProvAbstractObject",
     #'@param ns namespace prefix
     setId = function(id, ns = NULL){
       self$setProvAttr("id", id, ns = ns)
+    },
+
+    #'@description Get ID
+    #'@return the PROV ID
+    getId = function(){
+      return(self$attrs[["prov:id"]])
+    },
+
+    #'@description Set REF
+    #'@param ref ref
+    #'@param ns namespace prefix
+    setRef = function(ref, ns = NULL){
+      self$setProvAttr("ref", ref, ns = ns)
+    },
+
+    #'@description Get REF
+    #'@return the PROV REF
+    getRef = function(){
+      return(self$attrs[["prov:ref"]])
     }
+
 
   )
 )

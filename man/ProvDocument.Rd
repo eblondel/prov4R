@@ -33,11 +33,13 @@ Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 \section{Public fields}{
 \if{html}{\out{<div class="r6-fields">}}
 \describe{
-\item{\code{agent}}{agent}
-
 \item{\code{entity}}{entity}
 
 \item{\code{activity}}{activity}
+
+\item{\code{wasGeneratedBy}}{wasGeneratedBy}
+
+\item{\code{agent}}{agent}
 
 \item{\code{person}}{person}
 
@@ -53,6 +55,8 @@ Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 \item \href{#method-ProvDocument-new}{\code{ProvDocument$new()}}
 \item \href{#method-ProvDocument-addEntity}{\code{ProvDocument$addEntity()}}
 \item \href{#method-ProvDocument-addActivity}{\code{ProvDocument$addActivity()}}
+\item \href{#method-ProvDocument-addGeneration}{\code{ProvDocument$addGeneration()}}
+\item \href{#method-ProvDocument-addUsage}{\code{ProvDocument$addUsage()}}
 \item \href{#method-ProvDocument-addAgent}{\code{ProvDocument$addAgent()}}
 \item \href{#method-ProvDocument-addPerson}{\code{ProvDocument$addPerson()}}
 \item \href{#method-ProvDocument-addOrganization}{\code{ProvDocument$addOrganization()}}
@@ -75,8 +79,10 @@ Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="encode"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-encode'><code>prov4R::ProvAbstractObject$encode()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="getClass"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-getClass'><code>prov4R::ProvAbstractObject$getClass()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="getClassName"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-getClassName'><code>prov4R::ProvAbstractObject$getClassName()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="getId"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-getId'><code>prov4R::ProvAbstractObject$getId()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="getNamespace"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-getNamespace'><code>prov4R::ProvAbstractObject$getNamespace()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="getNamespaceDefinition"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-getNamespaceDefinition'><code>prov4R::ProvAbstractObject$getNamespaceDefinition()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="getRef"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-getRef'><code>prov4R::ProvAbstractObject$getRef()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="getRootElement"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-getRootElement'><code>prov4R::ProvAbstractObject$getRootElement()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="getXmlElement"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-getXmlElement'><code>prov4R::ProvAbstractObject$getXmlElement()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="isDocument"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-isDocument'><code>prov4R::ProvAbstractObject$isDocument()</code></a></span></li>
@@ -86,6 +92,7 @@ Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="setId"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-setId'><code>prov4R::ProvAbstractObject$setId()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="setIsDocument"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-setIsDocument'><code>prov4R::ProvAbstractObject$setIsDocument()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="setProvAttr"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-setProvAttr'><code>prov4R::ProvAbstractObject$setProvAttr()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="setRef"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-setRef'><code>prov4R::ProvAbstractObject$setRef()</code></a></span></li>
 <li><span class="pkg-link" data-pkg="prov4R" data-topic="ProvAbstractObject" data-id="validate"><a href='../../prov4R/html/ProvAbstractObject.html#method-ProvAbstractObject-validate'><code>prov4R::ProvAbstractObject$validate()</code></a></span></li>
 </ul>
 </details>
@@ -137,6 +144,48 @@ Adds activity
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{activity}}{activity}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-ProvDocument-addGeneration"></a>}}
+\if{latex}{\out{\hypertarget{method-ProvDocument-addGeneration}{}}}
+\subsection{Method \code{addGeneration()}}{
+Adds generation
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{ProvDocument$addGeneration(entity, activity, time)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{entity}}{entity}
+
+\item{\code{activity}}{activity}
+
+\item{\code{time}}{time}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-ProvDocument-addUsage"></a>}}
+\if{latex}{\out{\hypertarget{method-ProvDocument-addUsage}{}}}
+\subsection{Method \code{addUsage()}}{
+Adds usage
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{ProvDocument$addUsage(entity, activity, time)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{entity}}{entity}
+
+\item{\code{activity}}{activity}
+
+\item{\code{time}}{time}
 }
 \if{html}{\out{</div>}}
 }

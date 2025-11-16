@@ -34,6 +34,11 @@ ProvDocument <- R6Class("ProvDocument",
     #'@field activity activity
     activity = list(),
 
+    #'@field wasGeneratedBy wasGeneratedBy
+    wasGeneratedBy = list(),
+    #'@field used used
+    used = list(),
+
     #'@field agent agent
     agent = list(),
     #'@field person person
@@ -59,6 +64,30 @@ ProvDocument <- R6Class("ProvDocument",
     #'@param activity activity
     addActivity = function(activity){
       self$addListElement("activity", activity)
+    },
+
+    #'@description Adds generation
+    #'@param entity entity
+    #'@param activity activity
+    #'@param time time
+    addGeneration = function(entity, activity, time){
+      generation = ProvGeneration$new()
+      generation$setEntity(entity)
+      generation$setActivity(activity)
+      generation$setTime(time)
+      self$addListElement("wasGeneratedBy", generation)
+    },
+
+    #'@description Adds usage
+    #'@param entity entity
+    #'@param activity activity
+    #'@param time time
+    addUsage = function(entity, activity, time){
+      usage = ProvUsage$new()
+      usage$setEntity(entity)
+      usage$setActivity(activity)
+      usage$setTime(time)
+      self$addListElement("used", usage)
     },
 
     #'@description Adds agent

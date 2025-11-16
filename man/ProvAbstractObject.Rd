@@ -69,6 +69,9 @@ Emmanuel Blondel <emmanuel.blondel1@gmail.com>
 \item \href{#method-ProvAbstractObject-getXmlElement}{\code{ProvAbstractObject$getXmlElement()}}
 \item \href{#method-ProvAbstractObject-setProvAttr}{\code{ProvAbstractObject$setProvAttr()}}
 \item \href{#method-ProvAbstractObject-setId}{\code{ProvAbstractObject$setId()}}
+\item \href{#method-ProvAbstractObject-getId}{\code{ProvAbstractObject$getId()}}
+\item \href{#method-ProvAbstractObject-setRef}{\code{ProvAbstractObject$setRef()}}
+\item \href{#method-ProvAbstractObject-getRef}{\code{ProvAbstractObject$getRef()}}
 \item \href{#method-ProvAbstractObject-clone}{\code{ProvAbstractObject$clone()}}
 }
 }
@@ -485,6 +488,51 @@ Set ID
 \item{\code{ns}}{namespace prefix}
 }
 \if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-ProvAbstractObject-getId"></a>}}
+\if{latex}{\out{\hypertarget{method-ProvAbstractObject-getId}{}}}
+\subsection{Method \code{getId()}}{
+Get ID
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{ProvAbstractObject$getId()}\if{html}{\out{</div>}}
+}
+
+\subsection{Returns}{
+the PROV ID
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-ProvAbstractObject-setRef"></a>}}
+\if{latex}{\out{\hypertarget{method-ProvAbstractObject-setRef}{}}}
+\subsection{Method \code{setRef()}}{
+Set REF
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{ProvAbstractObject$setRef(ref, ns = NULL)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{ref}}{ref}
+
+\item{\code{ns}}{namespace prefix}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-ProvAbstractObject-getRef"></a>}}
+\if{latex}{\out{\hypertarget{method-ProvAbstractObject-getRef}{}}}
+\subsection{Method \code{getRef()}}{
+Get REF
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{ProvAbstractObject$getRef()}\if{html}{\out{</div>}}
+}
+
+\subsection{Returns}{
+the PROV REF
 }
 }
 \if{html}{\out{<hr>}}
